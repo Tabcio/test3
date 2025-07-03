@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>My Real-Time Game</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Strategy Game</title>
     <style>
-      /* A little bit of CSS to center the game canvas */
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #333;
-      }
+        /* Basic styling for the body to center the game */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Full viewport height */
+            background-color: #222; /* Dark background */
+            overflow: hidden; /* Prevent scrolling */
+        }
     </style>
-  </head>
-  <body>
-    <!-- This script tag is the most important part. -->
-    <!-- It loads the 'bundle.js' file that Webpack creates, -->
-    <!-- which contains all of our game's code. -->
-    <script src="bundle.js"></script>
-  </body>
+</head>
+<body>
+    <!-- The Phaser game will be injected into this div -->
+    <div id="game-container"></div>
+
+    <!-- The bundle.js will be automatically injected by Webpack -->
+    <!-- Firebase SDKs are now bundled via npm imports in FirebaseService.js -->
+</body>
 </html>
