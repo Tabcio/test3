@@ -1,0 +1,27 @@
+{
+  "name": "test3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "webpack-dev-server",
+  "build": "webpack --mode=production"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tabcio/test3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tabcio/test3/issues"
+  },
+  "homepage": "https://github.com/Tabcio/test3#readme",
+  "dependencies": {
+    "phaser": "^3.90.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  }
+}
